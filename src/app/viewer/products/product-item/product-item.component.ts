@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { faCartPlus, faCaretDown, faCaretUp } from '@fortawesome/free-solid-svg-icons';
 import { Observable } from 'rxjs';
 import { Product } from 'src/app/model/interfaces/product';

@@ -11,8 +11,8 @@
 </div>
 <div *ngIf="products$ | async; else alternativText">
     <div *ngFor="let product of products$ | async; trackBy: trackByProductId">
-        <app-product-item [product]="product" isGreaterThenMaxOrderCount=checkIsGreaterThenMaxOrderCount()
-            addProductToCart="onAddProductToCart($event)">
+        <app-product-item [product]="product" [isGreaterThenMaxOrderCount]="checkIsGreaterThenMaxOrderCount()"
+            (addProductToCart)="onAddProductToCart($event)">
         </app-product-item>
     </div>
 </div>

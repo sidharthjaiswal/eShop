@@ -58,6 +58,7 @@ export class ProductsService {
     {"id":48,"title":"Danishes - Mini Raspberry","descriptionShort":"Occlusion of L Popl Art with Extralum Dev, Perc Approach","descriptionLong":"Occlusion of Left Popliteal Artery with Extraluminal Device, Percutaneous Approach","price":"705.51","currency":"BRL","amount":7,"image":"http://dummyimage.com/100x100.png/cc0000/ffffff"},
     {"id":49,"title":"Carrots - Jumbo","descriptionShort":"Dilation of L Com Carotid with 3 Drug-elut, Perc Approach","descriptionLong":"Dilation of Left Common Carotid Artery with Three Drug-eluting Intraluminal Devices, Percutaneous Approach","price":"704.58","currency":"IDR","amount":54,"image":"http://dummyimage.com/100x100.png/ff4444/ffffff"},
     {"id":50,"title":"Squid - U - 10 Thailand","descriptionShort":"Bypass R Ventricle to Pulm Trunk w Zooplastic, Open","descriptionLong":"Bypass Right Ventricle to Pulmonary Trunk with Zooplastic Tissue, Open Approach","price":"428.57","currency":"CUP","amount":21,"image":"http://dummyimage.com/100x100.png/cc0000/ffffff"},
+    {"id":51,"title":"Sidharth","descriptionShort":"short Description","descriptionLong":"Long Description","price":"428.57","currency":"CUP","amount":21,"image":"http://dummyimage.com/100x100.png/cc0000/ffffff"}
 
   ];
 

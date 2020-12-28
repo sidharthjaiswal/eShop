@@ -27,7 +27,7 @@ export class AdressFormComponent implements OnInit {
         ])
       ],
       town: ["", Validators.required],
-      country: ["Deutschland", Validators.required]
+      country: ["Schweiz", Validators.required]
     });
   }
   ngOnInit(): void {

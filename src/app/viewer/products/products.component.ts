@@ -46,6 +46,7 @@ export class ProductsComponent implements OnDestroy, OnChanges {
   }
 
   public onAddProductToCart(product: Product): void {
+    console.log(product + "added to cart");
     this.orderService.insertProductInOrder(product);
   }
 

@@ -12,11 +12,11 @@
                             <p>Menge: {{product?.amount}}</p>
                     </div>
                     <div class="col-sm-6">
-                            <p>Preis: {{product?.price | calculateEuro:product?.currency | currency:'EUR'}}</p>
+                            <p>Preis: {{product?.price | calculateFranc:product.currency | currency:'CHF'}}</p>
                     </div>
                     <div class="col-sm-12">
                             <p>
-                                {{product?.descriptionLong}} {{product?.descriptionLong}} {{product?.descriptionLong}} {{product?.descriptionLong}}
+                                {{product?.descriptionLong}} 
                             </p>
                     </div>
             </div>

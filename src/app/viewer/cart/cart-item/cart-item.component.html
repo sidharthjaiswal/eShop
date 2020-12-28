@@ -25,7 +25,7 @@
         <div class="text-right">
           <p>
             {{ productCount }} Produkte für insgesamt
-            <strong>{{ totalOfOrder | currency: "EUR" }}</strong>
+            <strong>{{ totalOfOrder | currency: "CHF" }}</strong>
           </p>
         </div>
         <div *ngIf="showOrderButton(order.status)">

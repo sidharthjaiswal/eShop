@@ -1,29 +1,30 @@
-import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
-import { FormsModule } from "@angular/forms";
-import { RouterModule } from "@angular/router";
+import { CommonModule } from "@angular/common";
+import { CartModule } from "./cart/cart.module";
 import { FooterComponent } from "./footer/footer.component";
-import { HeaderComponent } from "./header/header.component";
-import { HeaderModule } from "./header/header.module";
-import { NavigationComponent } from "./nav/nav.component";
 import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
+import { HeaderModule } from "./header/header.module";
 import { ProductsModule } from "./products/products.module";
+import { HeaderComponent } from "./header/header.component";
 import { SearchComponent } from "./search/search.component";
+import { FormsModule } from "@angular/forms";
+import { RouterModule } from '@angular/router';
+import { NavigationComponent } from "./nav/nav.component";
 
 @NgModule({
-    declarations: [
-      FooterComponent,
-      NavigationComponent,
-      PageNotFoundComponent,
-      SearchComponent
-    ],
-    imports: [
-      CommonModule,
-      HeaderModule,
-      ProductsModule,
-      FormsModule,
-      RouterModule
-    ],
-    exports: [FooterComponent, HeaderComponent, NavigationComponent]
-  })
-  export class ViewerModule {}
+  declarations: [
+    FooterComponent,
+    NavigationComponent,
+    PageNotFoundComponent,
+    SearchComponent
+  ],
+  imports: [
+    CommonModule,
+    HeaderModule,
+    ProductsModule,
+    FormsModule,
+    RouterModule
+  ],
+  exports: [FooterComponent, HeaderComponent, NavigationComponent]
+})
+export class ViewerModule {}

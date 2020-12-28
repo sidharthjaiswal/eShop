@@ -1,54 +1,30 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
+import { NgModule, LOCALE_ID } from '@angular/core';
+import { registerLocaleData } from '@angular/common';
+import localeDe from '@angular/common/locales/de';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { HeaderLogoComponent } from './viewer/header/header-logo/header-logo.component';
-import { WarenkorbComponent } from './viewer/header/warenkorb/warenkorb.component';
-import { HeaderComponent } from './viewer/header/header.component';
-import { HeaderTitleComponent } from './viewer/header/header-title/header-title.component';
-import { NavigationComponent } from './viewer/nav/nav.component';
-import { CartComponent } from './viewer/cart/cart.component';
-import { CartItemComponent } from './viewer/cart/cart-item/cart-item.component';
-import { AdressFormComponent } from './viewer/cart/cart-item/adress-form/adress-form.component';
-import { ProductItemComponent } from './viewer/cart/cart-item/product-item/product-item.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { RouterModule } from '@angular/router';
-import { CalculateFrancPipe } from './model/pipes/calculate-franc.pipe';
-import { FooterComponent } from './viewer/footer/footer.component';
-import { ProductsComponent } from './viewer/products/products.component';
-import { SearchComponent } from './viewer/search/search.component';
+import { ViewerModule } from './viewer/viewer.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HeaderLogoComponent,
-    HeaderComponent,
-    HeaderTitleComponent,
-    HeaderLogoComponent,
-    WarenkorbComponent,
-    NavigationComponent,
-    CartComponent,
-    CartItemComponent,
-    AdressFormComponent,
-    ProductItemComponent,
-    CalculateFrancPipe,
-    CartComponent,
-    FooterComponent,
-    ProductsComponent,
-    SearchComponent,
-    ProductItemComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule,
-    ReactiveFormsModule,
-    FormsModule,
-    RouterModule
+    ViewerModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: LOCALE_ID,
+      useValue: 'de'
+    }
+  ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor() {
+    registerLocaleData(localeDe);
+  }
+}

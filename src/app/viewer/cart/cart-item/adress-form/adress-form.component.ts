@@ -9,11 +9,11 @@ import { Address } from 'src/app/model/interfaces/adress';
 })
 export class AdressFormComponent implements OnInit {
 
-  @Output() saveAddress: EventEmitter<Address> = new EventEmitter();
+  @Output()    saveAddress: EventEmitter<Address> = new EventEmitter();
   public address!: Address;
   public authForm!: FormGroup;
 
-  constructor(private fb: FormBuilder) {
+  constructor( private fb: FormBuilder) {
     // use FormBuilder to create a form group
     this.authForm = this.fb.group({
       firstName: ["", Validators.required],

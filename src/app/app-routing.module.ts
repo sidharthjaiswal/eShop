@@ -3,14 +3,12 @@ import { Routes, RouterModule } from '@angular/router';
 import { ProductsComponent } from './viewer/products/products.component';
 import { SearchComponent } from './viewer/search/search.component';
 import { PageNotFoundComponent } from './viewer/page-not-found/page-not-found.component';
-import { CartModule } from './viewer/cart/cart.module';
-import { CartComponent } from './viewer/cart/cart.component';
 const routes: Routes =
   [
     {
       path: '',
       pathMatch: 'full',
-      redirectTo: 'products'
+      redirectTo: 'products' //first page in sight
     },
     {
       path: 'products',

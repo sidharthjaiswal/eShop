@@ -9,5 +9,5 @@ import {  faCartPlus } from '@fortawesome/free-solid-svg-icons';
 })
 export class AppComponent {
   title = 'eShop';
-  faCartPlus = faCartPlus;
+   faCartPlus = faCartPlus;
 }

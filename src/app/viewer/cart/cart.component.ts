@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Order } from 'src/app/model/interfaces/orders';
 import { OrderService } from 'src/app/model/services/order.service';
 
@@ -7,16 +7,12 @@ import { OrderService } from 'src/app/model/services/order.service';
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.css']
 })
-export class CartComponent implements OnInit {
+export class CartComponent {
   public orders: Order[];
 
-  constructor(private readonly orderService: OrderService) {
+  constructor(   readonly orderService: OrderService) {
     this.orders = this.orderService.getAllOrders();
   }
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
-
   public trackByOrderId(order: Order): number {
     return order.id;
   }

@@ -7,8 +7,8 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./warenkorb.component.css']
 })
 export class WarenkorbComponent implements OnInit {
-  @Input() count!: number;
-  @Input() total!: number;
+  @Input()    count!: number;
+  @Input()    total!: number;
   public faShoppingCart = faShoppingCart;
 
   constructor() { }

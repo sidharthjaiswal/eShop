@@ -7,7 +7,7 @@ import { map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class ProductsService {
-  private products: Product[] = [
+   products: Product[] = [
     {"id":1,"title":"Muffin Batt - Ban Dream Zero","descriptionShort":"Reposition Trigeminal Nerve, Perc Endo Approach","descriptionLong":"Reposition Trigeminal Nerve, Percutaneous Endoscopic Approach","price":"229.19","currency":"RUB","amount":53,"image":"http://dummyimage.com/100x100.png/dddddd/000000"},
     {"id":2,"title":"Stock - Fish","descriptionShort":"Bypass 2 Cor Art from Cor Art, Open Approach","descriptionLong":"Bypass Coronary Artery, Two Arteries from Coronary Artery, Open Approach","price":"994.41","currency":"PHP","amount":71,"image":"http://dummyimage.com/100x100.png/dddddd/000000"},
     {"id":3,"title":"Trueblue - Blueberry 12x473ml","descriptionShort":"Bypass Pancreat Duct to Lg Int w Intralum Dev, Perc Endo","descriptionLong":"Bypass Pancreatic Duct to Large Intestine with Intraluminal Device, Percutaneous Endoscopic Approach","price":"159.53","currency":"THB","amount":86,"image":"http://dummyimage.com/100x100.png/dddddd/000000"},
@@ -76,7 +76,7 @@ export class ProductsService {
     return this.products.find(product => product.id === id);
   }
 
-  private productContainsSearchString(product: Product, filterString: string): boolean {
+     productContainsSearchString(product: Product, filterString: string): boolean {
     return (
       product.title.toLowerCase().indexOf(filterString) >= 0 ||
       product.descriptionShort.indexOf(filterString) >= 0 ||

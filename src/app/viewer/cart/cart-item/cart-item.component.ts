@@ -16,13 +16,13 @@ interface StatusDisplay {
   styleUrls: ['./cart-item.component.scss']
 })
 export class CartItemComponent implements OnChanges {
-  @Input() order!: Order;
-  @Input() totalOfOrder!: number;
-  @Input() productCount!: number;
+  @Input()    order!: Order;
+  @Input()    totalOfOrder!: number;
+  @Input()    productCount!: number;
   public showAdressForm = false;
   public status!: StatusDisplay;
 
-  constructor(private readonly orderService: OrderService) {}
+  constructor(   readonly orderService: OrderService) {}
 
   public ngOnChanges(): void {
     if (this.order) {

@@ -8,11 +8,11 @@ import { CalculateFrancService } from "./calculate-franc.service";
   providedIn: "root",
 })
 export class OrderService {
-  private readonly MAX_ORDER_COUNT = 10;
-  private orders: Order[] = [];
-  private index = 0;
+     readonly MAX_ORDER_COUNT = 10;
+     orders: Order[] = [];
+     index = 0;
 
-  constructor(private readonly calculateFrancService: CalculateFrancService) {}
+  constructor(   readonly calculateFrancService: CalculateFrancService) {}
 
   public createNewOrder(name?: string): number {
     const newOrder: Order = {

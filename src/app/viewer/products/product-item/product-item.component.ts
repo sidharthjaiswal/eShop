@@ -9,9 +9,9 @@ import { Product } from 'src/app/model/interfaces/product';
   styleUrls: ['./product-item.component.scss']
 })
 export class ProductItemComponent {
-  @Input() product!: Product;
-  @Input() isGreaterThenMaxOrderCount = false;
-  @Output() addProductToCart: EventEmitter<Product> = new EventEmitter();
+  @Input()  product!: Product;
+  @Input()  isGreaterThenMaxOrderCount = false;
+  @Output()  addProductToCart: EventEmitter<Product> = new EventEmitter();
   public faCartPlus = faCartPlus;
   public faCaretDown = faCaretDown;
   public faCaretUp = faCaretUp;

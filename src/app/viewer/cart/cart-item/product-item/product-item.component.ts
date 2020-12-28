@@ -10,9 +10,9 @@ import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 })
 export class ProductItemComponent {
   @Input()
-  product!: Product;
-  @Input() disabled = false;
-  @Output() removeProduct: EventEmitter<Product> = new EventEmitter();
+   product!: Product;
+  @Input()  disabled = false;
+  @Output()  removeProduct: EventEmitter<Product> = new EventEmitter();
   public faTrashAlt = faTrashAlt;
 
   public removeProductClick(product: Product): void {

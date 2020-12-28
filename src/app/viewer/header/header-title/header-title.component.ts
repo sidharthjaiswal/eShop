@@ -8,10 +8,10 @@ import { Component, Input } from '@angular/core';
 export class HeaderTitleComponent  {
  
   @Input()
-  title!: string;
+     title!: string;
   constructor() { }
 
-  ngOnInit(): void {
+     ngOnInit(): void {
   }
 
 }

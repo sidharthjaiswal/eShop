@@ -8,7 +8,7 @@ import { OrderService } from 'src/app/model/services/order.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  constructor(private readonly orderService: OrderService) {
+  constructor(   readonly orderService: OrderService) {
   }
 
   public getCartCount(): number {

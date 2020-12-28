@@ -4,11 +4,11 @@ import { Directive, HostBinding, HostListener } from '@angular/core';
   selector: '[appChangeBorder]'
 })
 export class ChangeBorderDirective {
-  @HostBinding('style.border') border: string;
-  @HostListener('mouseover') setBorder() {
+  @HostBinding('style.border')    border: string;
+  @HostListener('mouseover')    setBorder() {
     this.border = '2px solid #A9A9A9';
   }
-  @HostListener('mouseout') unsetBorder() {
+  @HostListener('mouseout')    unsetBorder() {
     this.border = '2px solid #fff';
   }
 

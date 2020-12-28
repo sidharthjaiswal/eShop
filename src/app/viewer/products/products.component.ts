@@ -10,14 +10,14 @@ import { ProductsService } from 'src/app/model/services/products.service';
   styleUrls: ["./products.component.css"],
 })
 export class ProductsComponent implements OnDestroy, OnChanges {
-  @Input() filterString = "";
+  @Input()  filterString = "";
   public products$: Observable<Product[]>;
   public subcribes$: Subscription[] = [];
   public resultCount: number;
 
   constructor(
-    private readonly productsService: ProductsService,
-    private readonly orderService: OrderService
+       readonly productsService: ProductsService,
+       readonly orderService: OrderService
   ) {
     this.products$ = this.productsService.getAllProducts$();
     this.resultCount = this.productsService.getProductCount();

@@ -6,7 +6,7 @@ import { CalculateFrancService } from '../services/calculate-franc.service';
 })
 export class CalculateFrancPipe implements PipeTransform {
 
-  constructor(   readonly calculateFrancService: CalculateFrancService) {}
+  constructor( readonly calculateFrancService: CalculateFrancService) {}
 
   transform(value: any, currency: string): any {
     return this.calculateFrancService.calculateInFranc(value, currency);

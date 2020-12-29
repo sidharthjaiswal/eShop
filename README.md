@@ -28,4 +28,14 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Documentation 
 
-This is a static eShop, created with a JS Framework known as Angular CLI. 
+This is a static eShop, created with a JS Framework known as Angular CLI. Forked with the project sebCon24Master by sebCon
+
+## Build up
+
+The project has 3 Modules: 1. The "App" Module  `src\app` , 2. The "Model" Module `src\app\model` and last one is the "Viewer" Module `src\app\viewer`. 
+The Model and Viewer are in the App Module.
+
+## "Model" Module
+
+In this paragraph, you will learn more about the "Model". this module represents the database and the backend of this project. 
+There is a directive.service for the Border (`src\app\model\directives`), Interfaces for every component in the "Viewer Module" which get called back by them (`src\app\model\interfaces`), a Pipe for the calculation Service (`src\app\model\pipes`), Services for the products and the orders ( `src\model\services`). These Services execute the CRUD (Create-Read-Update-Delete) operations. The `src\app\model\services\products.service.ts` also contains the database aka the products in json Format. Keep in mind, this project uses static data and no dynamic data e.g data from MongoDB. 
